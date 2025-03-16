@@ -4,6 +4,7 @@ const { Client, GatewayIntentBits, PermissionsBitField } = require('discord.js')
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
 const PREFIX = process.env.PREFIX;
+const OWNER_ID = process.env.OWNER_ID;
 
 client.once('ready', () => {
     console.log(`Bot ${client.user.tag} is online!`);
@@ -40,6 +41,16 @@ client.on('messageCreate', async (message) => {
             console.error(error);
             message.reply('An error occurred while trying to nuke the channel.');
         }
+    }
+
+    if (command === 'invite') {
+        if (message.author.id !== OWNER_ID) {
+            return message.reply('You do not have permission to use this command.');
+        }
+
+        const inviteLink = `https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=${PermissionsBitField.Flags.Administrator}`;
+
+        message.reply(`Here is the invite link to add the bot to another server: ${inviteLink}`);
     }
 });
 
