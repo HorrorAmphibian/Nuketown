@@ -1,22 +1,22 @@
-# 🎮 Nuketown
+# Nuketown
 
 A simple and powerful Discord bot designed to **clone and delete channels** (aka "nuke") with proper permission checks. It also includes a command to generate an **invite link** for easy bot deployment.
 
-> ⚠️ **For moderation purposes only**. Always use responsibly.
+> **For moderation purposes only**. Always use responsibly.
 
 ---
 
-## ⚙️ Features
+## Features
 
-- 💣 `nuke` command: Clones and deletes a specified channel
-- 🔗 `invite` command: Generates a bot invite link (owner-only)
-- ✅ Permission checks to prevent abuse
-- 🛡️ Protects critical system channels from deletion
-- 🧼 Minimal, easy-to-read codebase
+- `nuke` command: Clones and deletes a specified channel
+- `invite` command: Generates a bot invite link (owner-only)
+- Permission checks to prevent abuse
+- Protects critical system channels from deletion
+- Minimal, easy-to-read codebase
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - Node.js 16+
 - npm or yarn
@@ -25,7 +25,7 @@ A simple and powerful Discord bot designed to **clone and delete channels** (aka
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -49,7 +49,7 @@ OWNER_ID=your_discord_user_id
 
 ---
 
-## 🚀 Running the Bot
+## Running the Bot
 
 Start the bot:
 ```bash
@@ -58,7 +58,7 @@ node index.js
 
 ---
 
-## 💣 Commands
+## Commands
 
 ### `!nuke [#channel | channel_id]`
 
@@ -82,7 +82,7 @@ node index.js
 
 ---
 
-## 🛡️ Permissions Required
+## Permissions Required
 
 The bot needs the following **permissions** to function properly:
 
@@ -94,7 +94,7 @@ Make sure to grant these permissions when inviting the bot.
 
 ---
 
-## 🐛 Troubleshooting
+## roubleshooting
 
 - **Bot not responding?**
   - Check if it's online in your server
