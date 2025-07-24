@@ -29,8 +29,8 @@ A simple and powerful Discord bot designed to **clone and delete channels** (aka
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/discord-nuker-bot.git
-cd discord-nuker-bot
+git clone https://github.com/HorrorAmphibian/Nuketown.git
+cd Nuketown
 ```
 
 2. Install dependencies:
@@ -53,7 +53,7 @@ OWNER_ID=your_discord_user_id
 
 Start the bot:
 ```bash
-node index.js
+node .
 ```
 
 ---
